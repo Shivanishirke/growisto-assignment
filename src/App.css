@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  width: 74%;
+  height: 100%;
+  border: 1px solid #bdbdbd;
+  background-image: url("./assets/signin-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  width: 26%;
+  padding: 48px;
+}
+
+.right-container {
+  height: 90%;
+}
+
+.title {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.right-footer {
+  height: 10%;
+  font-size: 12px;
+  display: flex;
+  font-family: "Roboto";
+  justify-content: space-between;
+  align-items: end;
+}
+
+.form-logo {
+  height: 48px;
+  display: flex;
+  margin-bottom: 48px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form-logo > img {
+  margin-right: 12px;
+}
+
+.form-logo > h4 {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  margin-bottom: 24px;
+}
+
+.input-container > div {
+  width: 100%;
+  font-size: 11px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.input-container > input {
+  height: 48px;
+  width: 360px;
+  padding: 0 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+}
+
+.switch > label {
+  font-size: 12px !important;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.link {
+  font-size: 12px;
+  color: #007aff;
+}
+
+.btn {
+  width: 360px;
   color: white;
+  padding: 10px 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  opacity: 0.7 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signin-btn {
+  background: #007aff;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 32px;
+  margin: none;
+}
+
+.google-btn {
+  background: #333333;
+  margin-bottom: 24px;
+}
+
+.google-btn > img {
+  margin-right: 16px;
+}
+
+.createNew {
+  display: flex;
+  color: #666;
+  font-size: 12px;
+  justify-content: center;
+}
+
+/* ----------- Responsive --------------  */
+
+@media screen and (max-width: 800px) {
+  .left {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .right {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .input-container > input {
+    width: 100%;
   }
 }
