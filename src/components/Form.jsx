@@ -1,8 +1,9 @@
+import Checkbox from "./Checkbox";
 import Input from "./Input";
 
 const Form = () => {
   return (
-    <div className="right-container">
+    <div className="container">
       <div className="form-logo">
         <img src="../form-logo.png" alt="logo" />
         <h4 className="title logo-title"> UI Unicorn </h4>
@@ -16,17 +17,7 @@ const Form = () => {
         <Input label="Password" placeholder="Enter Password" />
 
         <div className="remember">
-          <div class="form-check form-switch switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckChecked"
-            />
-            <label class="form-check-label" for="flexSwitchCheckChecked">
-              Remember me
-            </label>
-          </div>
+          <Checkbox label="Remember me" />
 
           <div className="link"> Forgot password </div>
         </div>
@@ -37,7 +28,7 @@ const Form = () => {
 
         <button className="btn google-btn">
           <img src="./google.png" alt="google-logo" />
-          or sign in with Google{" "}
+          or sign in with Google
         </button>
       </div>
 
