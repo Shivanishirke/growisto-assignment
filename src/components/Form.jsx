@@ -5,7 +5,7 @@ const Form = () => {
     <div className="right-container">
       <div className="form-logo">
         <img src="../form-logo.png" alt="logo" />
-        <h4 className="title"> UI Unicorn </h4>
+        <h4 className="title logo-title"> UI Unicorn </h4>
       </div>
 
       <h4 className="title mb-4">Nice to see you again </h4>

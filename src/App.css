@@ -36,6 +36,10 @@
   align-items: end;
 }
 
+.logo-title {
+  margin: 0;
+}
+
 .form-logo {
   height: 48px;
   display: flex;
@@ -89,6 +93,11 @@
   color: #007aff;
 }
 
+.form-check-input {
+  height: 20px;
+  width: 40px;
+}
+
 .btn {
   width: 360px;
   color: white;
@@ -125,6 +134,11 @@ hr {
   justify-content: center;
 }
 
+.form-check-input:checked {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
 /* ----------- Responsive --------------  */
 
 @media screen and (max-width: 800px) {
@@ -138,6 +152,10 @@ hr {
   }
 
   .input-container > input {
+    width: 100%;
+  }
+
+  .btn {
     width: 100%;
   }
 }
